@@ -9,10 +9,18 @@ public class BinaryOperatorExample {
     public static void main(String[] args) {
 
         // BiFunction
+        BiFunction<Integer, Integer, Integer> func = (a1, b2) -> a1 + b2;
 
+        Integer result = func.apply(1, 2);
+
+        System.out.println(result); // 5
 
         // BinaryOperator
+        BinaryOperator<Integer> func2 = (a1, b2) -> a1 + b2;
 
+        Integer result2 = func.apply(3, 4);
+
+        System.out.println(result2); // 5
 
     }
 
